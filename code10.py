@@ -1,3 +1,28 @@
+"""
+10. Regular Expression Matching / 正则表达式匹配 (Hard)
+
+给你一个字符串 s 和一个字符规律 p，请你来实现一个支持 '.' 和 '*' 的正则表达式匹配。
+'.' 匹配任意单个字符
+'*' 匹配零个或多个前面的那一个元素
+
+Given an input string s and a pattern p, implement regular expression matching with support for '.' and '*'.
+'.' Matches any single character.
+'*' Matches zero or more of the preceding element.
+
+Example 1:
+Input: s = "aa", p = "a"
+Output: false
+
+Example 2:
+Input: s = "aa", p = "a*"
+Output: true
+
+Example 3:
+Input: s = "ab", p = ".*"
+Output: true
+"""
+
+
 class Solution(object):
     def isMatch(self, s, p):
         """
@@ -44,4 +69,6 @@ class Solution(object):
 
 if __name__ == "__main__":
     solution = Solution()
-    print(solution.isMatch("aa", "a"))
+    print("Example 1:", solution.isMatch("aa", "a"))   # Expected: False
+    print("Example 2:", solution.isMatch("aa", "a*"))  # Expected: True
+    print("Example 3:", solution.isMatch("ab", ".*"))  # Expected: True

@@ -1,3 +1,26 @@
+"""
+12. Integer to Roman / 整数转罗马数字 (Medium)
+
+罗马数字包含以下七种字符： I, V, X, L, C, D, M
+给定一个整数，将其转换为罗马数字。
+
+Roman numerals are represented by seven different symbols: I, V, X, L, C, D, M.
+Given an integer, convert it to a roman numeral.
+
+Example 1:
+Input: num = 3749
+Output: "MMMDCCXLIX"
+
+Example 2:
+Input: num = 58
+Output: "LVIII"
+
+Example 3:
+Input: num = 1994
+Output: "MCMXCIV"
+"""
+
+
 class Solution:
     def intToRoman(self, num: int) -> str:
         lroma = ['I', 'V', 'X', 'L', 'C', 'D', 'M']
@@ -31,4 +54,6 @@ class Solution:
 
 if __name__ == "__main__":
     solution = Solution()
-    print(solution.intToRoman(3749))
+    print("Example 1:", solution.intToRoman(3749))  # Expected: "MMMDCCXLIX"
+    print("Example 2:", solution.intToRoman(58))    # Expected: "LVIII"
+    print("Example 3:", solution.intToRoman(1994))  # Expected: "MCMXCIV"

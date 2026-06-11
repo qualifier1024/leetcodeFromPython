@@ -1,3 +1,24 @@
+"""
+8. String to Integer (atoi) / 字符串转换整数 (Medium)
+
+请你来实现一个 myAtoi(string s) 函数，使其能将字符串转换成一个 32 位有符号整数。
+
+Implement the myAtoi(string s) function, which converts a string to a 32-bit signed integer.
+
+Example 1:
+Input: s = "42"
+Output: 42
+
+Example 2:
+Input: s = "   -42"
+Output: -42
+
+Example 3:
+Input: s = "4193 with words"
+Output: 4193
+"""
+
+
 class Solution(object):
     def myAtoi(self, s):
         """
@@ -30,4 +51,6 @@ class Solution(object):
 
 if __name__ == "__main__":
     solution = Solution()
-    print(solution.myAtoi("42"))
+    print("Example 1:", solution.myAtoi("42"))                # Expected: 42
+    print("Example 2:", solution.myAtoi("   -42"))            # Expected: -42
+    print("Example 3:", solution.myAtoi("4193 with words"))   # Expected: 4193
