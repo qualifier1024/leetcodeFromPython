@@ -1,6 +1,3 @@
-"2"
-
-
 class Solution:
     def intToRoman(self, num: int) -> str:
         lroma = ['I', 'V', 'X', 'L', 'C', 'D', 'M']
@@ -30,3 +27,8 @@ class Solution:
             res = tiroma(n, i) + res
             n += 1
         return res
+
+
+if __name__ == "__main__":
+    solution = Solution()
+    print(solution.intToRoman(3749))

@@ -1,6 +1,3 @@
-"3"
-
-
 class Solution(object):
     def isMatch(self, s, p):
         """
@@ -43,3 +40,8 @@ class Solution(object):
                 elif isTrue(s[si], p[pi]):
                     g_act.append([si - 1, pi - 1])
         return False
+
+
+if __name__ == "__main__":
+    solution = Solution()
+    print(solution.isMatch("aa", "a"))

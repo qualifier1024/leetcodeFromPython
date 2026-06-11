@@ -1,6 +1,3 @@
-"1"
-
-
 # Definition for singly-linked list.
 from typing import Optional
 
@@ -24,3 +21,28 @@ class Solution:
             return list1 if list1 else list2
         res.next=self.mergeTwoLists(list1,list2)
         return res
+
+
+def list_to_listnode(lst):
+    dummy = ListNode()
+    cur = dummy
+    for val in lst:
+        cur.next = ListNode(val)
+        cur = cur.next
+    return dummy.next
+
+
+def listnode_to_list(node):
+    res = []
+    while node:
+        res.append(node.val)
+        node = node.next
+    return res
+
+
+if __name__ == "__main__":
+    solution = Solution()
+    list1 = list_to_listnode([1,2,4])
+    list2 = list_to_listnode([1,3,4])
+    result = solution.mergeTwoLists(list1, list2)
+    print(listnode_to_list(result))

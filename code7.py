@@ -1,6 +1,3 @@
-"2"
-
-
 class Solution(object):
     def reverse(self, x):
         """
@@ -12,3 +9,8 @@ class Solution(object):
         if s >> 31 != 0:
             return 0
         return s * ab
+
+
+if __name__ == "__main__":
+    solution = Solution()
+    print(solution.reverse(123))

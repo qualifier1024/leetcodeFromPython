@@ -1,6 +1,3 @@
-"2"
-
-
 class Solution(object):
     def lengthOfLongestSubstring(self, s):
         if not s: return 0
@@ -19,3 +16,8 @@ class Solution(object):
                 max_len = cur_len
             lookup.add(s[i])
         return max_len
+
+
+if __name__ == "__main__":
+    solution = Solution()
+    print(solution.lengthOfLongestSubstring("abcabcbb"))

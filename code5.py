@@ -1,6 +1,3 @@
-"2"
-
-
 class Solution(object):
     def longestPalindrome(self, s):
         """
@@ -33,3 +30,8 @@ class Solution(object):
             return s
 
         return s[te[-1][0]:te[-1][1] + 1]
+
+
+if __name__ == "__main__":
+    solution = Solution()
+    print(solution.longestPalindrome("babad"))

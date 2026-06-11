@@ -1,5 +1,3 @@
-"2"
-
 class Solution(object):
     def convert(self, s, numRows):
         """
@@ -21,3 +19,8 @@ class Solution(object):
         for j in nu:
             res = res + j
         return res
+
+
+if __name__ == "__main__":
+    solution = Solution()
+    print(solution.convert("PAYPALISHIRING", 3))

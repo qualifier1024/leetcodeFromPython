@@ -1,6 +1,3 @@
-"1"
-
-
 class Solution:
     def romanToInt(self, s: str) -> int:
         sni =0
@@ -22,3 +19,8 @@ class Solution:
             else:
                 snm-=ni
         return snm
+
+
+if __name__ == "__main__":
+    solution = Solution()
+    print(solution.romanToInt("III"))

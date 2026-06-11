@@ -1,6 +1,3 @@
-"1"
-
-
 class Solution:
     def isValid(self, s: str) -> bool:
         lis = []
@@ -21,3 +18,8 @@ class Solution:
         if lis:
             return False
         return True
+
+
+if __name__ == "__main__":
+    solution = Solution()
+    print(solution.isValid("()"))

@@ -1,4 +1,3 @@
-"2"
 from typing import List
 
 
@@ -16,3 +15,8 @@ class Solution:
 
         gp('', n, n)
         return res
+
+
+if __name__ == "__main__":
+    solution = Solution()
+    print(solution.generateParenthesis(3))

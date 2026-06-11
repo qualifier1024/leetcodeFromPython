@@ -1,6 +1,3 @@
-"2"
-
-
 class Solution(object):
     def myAtoi(self, s):
         """
@@ -29,3 +26,8 @@ class Solution(object):
         else:
             st = int(st) *ab
         return st
+
+
+if __name__ == "__main__":
+    solution = Solution()
+    print(solution.myAtoi("42"))
